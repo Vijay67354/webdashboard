@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vijay67354/webdashboard.git/static/css/main.a9e1c0ac.css",
+    "main.js": "/Vijay67354/webdashboard.git/static/js/main.622f5280.js",
+    "static/js/592.d2daad70.chunk.js": "/Vijay67354/webdashboard.git/static/js/592.d2daad70.chunk.js",
+    "static/media/background.png": "/Vijay67354/webdashboard.git/static/media/background.4710f27ffde2db804dc4.png",
+    "index.html": "/Vijay67354/webdashboard.git/index.html",
+    "main.a9e1c0ac.css.map": "/Vijay67354/webdashboard.git/static/css/main.a9e1c0ac.css.map",
+    "main.622f5280.js.map": "/Vijay67354/webdashboard.git/static/js/main.622f5280.js.map",
+    "592.d2daad70.chunk.js.map": "/Vijay67354/webdashboard.git/static/js/592.d2daad70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9e1c0ac.css",
+    "static/js/main.622f5280.js"
+  ]
+}
