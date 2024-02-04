@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Container {
+    background-image: url('/public/Assets/background.png');
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:focus {
+    outline: none
+}
+
+.form-item,
+.form-itemusername {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-item input,
+.form-itemusername input {
+    display: block;
+    height: 50px;
+    background: #E8F0FE;
+    border: solid 1px #ccc;
+    transition: all .3s ease;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.form-item input:focus,
+.form-itemusername input:focus {
+    border-color: #E8F0FE;
+    background: #E8F0FE;
+}
+
+.form-itemusername label,
+.form-item label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 15px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E8F0FE;
+    padding: 10px, 17px;
+    color: #6F757E;
+    transition: all .3s ease;
+}
+
+.form-itemusername input:focus+label,
+.form-item input:valid+label {
+    font-size: 11px;
+    top: -5px;
+}
+
+.form-item input:valid+label,
+.form-itemusername input:valid+label {
+    font-size: 11px;
+    top: -5px;
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 11px;
+    top: -5px;
+    border-radius: 20px;
+}
+
+.form-itemusername input:focus+label,
+.form-itemusername input:focus+label {
+    color: blue
+}
+
+#email {
+    border-radius: 20px;
+}
+
+#passowrd {
+    border-radius: 20px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.separator .line {
+    height: 3px;
+    flex: 1;
+    background-color: #9FA3A9;
+}
+
+.Logo {
+    display: flex;
+    gap: 10px;
+}
+
+.forgetpass {
+    color: #6F757E;
+    font-weight: 300;
+    letter-spacing: 2%;
+}
+
+.registerhere {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 275px) and (max-width:280px) {
+    .Container {
+        background-image: url('/public/Assets/background.png');
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    #passwordeye {
+        left: 210px;
+    }
+    .form-item label {
+        width: 90px;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 110px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 240px;
+    }
+    .svg-inline--fa fa-eye {
+        margin-right: 254px;
+    }
+    .Logo {
+        width: 260px;
+    }
+    .separator {
+        width: 225px;
+        gap: 9px;
+    }
+    .registerhere {
+        padding: 20px;
+    }
+    .form-item {
+        justify-content: space-between;
+    }
+    .xtractiondirect,
+    .xtraction {
+        font-size: 29px;
+    }
+    .xtractiondirectaccount {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .registerhereaccount {
+        line-height: 4px;
+    }
+    .continue {
+        font-size: 10px;
+    }
+    .xtractiondirect {
+        line-height: 8px;
+    }
+    .registerhereaccount {
+        font-size: 10px;
+    }
+    .logo {
+        width: 240px;
+    }
+    .forgetpass {
+        font-size: 10px;
+    }
+    .btn {
+        width: 240px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .email {
+        width: 30px;
+    }
+    .imgsignin {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .registerhere {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 99px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 340px;
+    }
+    .continue {
+        font-size: 14px;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+}
+
+@media (min-width: 900px) {
+    .registerhere {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 90px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 340px;
+    }
+    .continue {
+        font-size: 14px;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .registerhere {
+        grid-template-columns: 2fr 2fr;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 102px;
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .imgsignin {
+        width: 100%;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+    }
+    .form {
+        margin-top: 150px;
+    }
+    .continue {
+        font-size: 14px;
+    }
+    .xtractiondirect {
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .signinllustration {
+        display: block;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 340px;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+    .btn {
+        width: 360px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 281px) and (max-width: 541px) {
+    .imgsignin {
+        width: 60%;
+    }
+    .Container {
+        height: 88vh;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 103px;
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .continue {
+        font-size: 14px;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+    }
+    .xtraction,
+    .xtractiondirect {
+        font-size: 39px;
+        line-height: 47px;
+    }
+    .registerhereaccount {
+        line-height: 20px;
+    }
+    .imgsignin {
+        margin-top: 30px;
+        display: none;
+    }
+    .inputfield {
+        margin-top: 40px;
+    }
+    .forgetpassword {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    .registerhere {
+        margin-top: 70px;
+    }
+    .registerhere {
+        grid-template-columns: 2fr;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 300px;
+    }
+    .form {
+        width: 299px;
+        margin: 0 auto;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+    .btn {
+        width: 299px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    .Header {
+        margin-top: 120px;
+    }
+    .Container {
+        height: 88vh;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1280px) {
+    .imgsignin {
+        width: 70%;
+        margin-top: 50px;
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+        margin-top: 40px;
+    }
+    .registerhere {
+        grid-template-columns: 2fr;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .forgetpass {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .xtraction,
+    .xtractiondirect {
+        font-size: 58px;
+    }
+    .xtractiondirectaccount {
+        margin-top: 76px;
+    }
+    .inputfield {
+        margin-top: 60px;
+    }
+    .registerhereaccount {
+        line-height: 20px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 441px;
+    }
+    .form {
+        width: 440px;
+        margin: 0 auto;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+    .btn {
+        width: 441px;
+        padding: 15px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .registerhere {
+        grid-template-columns: 2fr 2fr 2fr;
+        margin: auto;
+    }
+    #passwordeye {
+        right: 10px;
+    }
+    .form-itemusername label,
+    .form-item label {
+        width: 100px;
+    }
+    .Header {
+        margin-top: 160px !important;
+        max-width: 86%;
+        margin: auto;
+    }
+    .imgsignin {
+        width: 100%;
+    }
+    .separator h2 {
+        padding: 0 2rem;
+    }
+    .xtractiondirect,
+    .xtraction {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .xtractiondirectaccount {
+        margin-top: 70px;
+    }
+    .registerhereaccount {
+        line-height: 20px;
+    }
+    .form-item input,
+    .form-itemusername input {
+        width: 340px;
+    }
+    .form {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .btn {
+        width: 360px;
+        padding: 15px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .password {
+        padding-right: 2.5em;
+    }
+    .Container {
+        height: 84vh;
+    }
+}
+
+.imgsignin {
+    animation: imgsignin .9s ease infinite alternate;
+}
+
+@keyframes imgsignin {
+    0% {
+        text-shadow: 0 5px 0 #ccc, 0 2px 3px rgba(0, 0, 0, 1);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
